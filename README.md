@@ -17,6 +17,4 @@ If you want to shut the talk with the chatbot, just write "bye" no matter the la
 
 The chatbot only answers questions related to the bots included (weather, travel, wikipedia, time), if you will input basic chat sequences like 'hi' or 'thank you' it will retrieve you a message error or it will fire one of the bots implemented as stop-words mantain a high cosine similarity with the keywords.
 
-Enjoy!
-
 
