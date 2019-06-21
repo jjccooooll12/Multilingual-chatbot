@@ -136,7 +136,7 @@ weatbot = WeatherBot()
 # In[5]:
 
 
-weatherbot = PolyBot(['rain', 'sun', 'snow', 'weather', 'sun', 'hailstorm', 'fog', 'temperature', 'degree', 'cold', 'hot', 'warm'],
+weatherbot = PolyBot(['rain', 'sun', 'snow', 'weather', 'sun', 'hailstorm', 'fog', 'temperature', 'degrees', 'cold', 'hot', 'warm', 'humidity'],
                  'EN',
                 weatbot.Answer_Weather,
                  bigrams=[('che', 'tempo')],
