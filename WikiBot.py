@@ -60,7 +60,8 @@ class WikiBot(Answers):
         language = NER_dict['language']
         CITY = NER_dict['CITY']
         WHAT = NER_dict['what_is']
-        if WHAT == True:
+        WHICH = NER_dict['which_is']
+        if WHAT == True or WHICH == True:
             topic = input_sent[2:]
             topic= " ".join(topic)
         else:
@@ -103,6 +104,6 @@ wbot = WikiBot()
 wikibot = PolyBot(['wikipedia', 'meaning', 'mean', 'sense'],
                  'EN',
                 wbot.Answer_Wiki,
-                 bigrams=[('what', 'is'), ('where', 'is'), ('who', 'is')],
+                 bigrams=[('what', 'is'), ('where', 'is'), ('who', 'is'), ('which', 'is')],
                  bigram_cutoff = 0.9)
 

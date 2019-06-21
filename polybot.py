@@ -692,7 +692,10 @@ class Conversation(PolyBot):
                                         bots_dict['language_bigram'+str(i)] = langs[iii]
                                         
                       
-                    bot.get_confidence(vect_dict, confidence, multi_dict, bots_dict['language_bot'+str(i)])   
+                    if self.baseline == True:
+                        bot.get_confidence(vect_dict, confidence, multi_dict, 'EN') 
+                    else:
+                        bot.get_confidence(vect_dict, confidence, multi_dict, bots_dict['language_bot'+str(i)])   
 
             all_confs = dict()
             for i, bot in enumerate(self.bots):

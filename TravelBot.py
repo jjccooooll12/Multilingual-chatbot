@@ -176,5 +176,6 @@ tbot = TravelBot()
 travelbot = PolyBot(['travel', 'trip', 'ride', 'fly', 'go', 'drive', 'bus', 'plane', 'taxi', 'ferry', 'car', 'train', 'cruise'],
                     'EN',
                     tbot.Answer_Travel,
+                     boost = 2,
                      travel=True)
 
